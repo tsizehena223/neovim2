@@ -8,15 +8,22 @@ require("lazy").setup({
     end,
   },
 
-  -- LSP and Autocomplete
-  "neovim/nvim-lspconfig",
-  {
-    "hrsh7th/nvim-cmp",
-    dependencies = {
-      "hrsh7th/cmp-nvim-lsp",
-      "L3MON4D3/LuaSnip",
+  
+    -- LSP and Autocomplete
+    {
+      "neovim/nvim-lspconfig", -- LSP support
     },
-  },
+    
+    {
+      "hrsh7th/nvim-cmp",
+      dependencies = {
+        "hrsh7th/cmp-nvim-lsp",
+        "L3MON4D3/LuaSnip",
+        "saadparwaiz1/cmp_luasnip",
+        "onsails/lspkind.nvim",
+      },
+    }
+
 
   -- Treesitter
   {
