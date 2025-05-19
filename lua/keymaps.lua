@@ -18,3 +18,5 @@ map("v", "x", '"_x')
 map("n", "<leader>p", '"+p')
 map("v", "<leader>y", '"+y')
 
+map("n", "<Tab>", ":bnext<CR>", { desc = "Next tab" })
+map("n", "<S-Tab>", ":bprev<CR>", { desc = "Previous tab" })
